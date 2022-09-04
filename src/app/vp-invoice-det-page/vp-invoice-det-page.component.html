@@ -1,0 +1,224 @@
+
+<div class="col-md-4 text-right">
+
+  <!-- <button class="btn btn-success btn-block button1" (click)="openPDF()">Download PDF</button> -->
+
+</div>
+<div id="invoiceholder" class="bgpdf">
+  <button class="button loginback" routerLink="/vpinvoicelist" routerLinkActive="active"> <img src="../../assets/Images/backbtn.png" class="backicon"> </button>
+  <button class="button1 loginback" (click)="openPDF()"><img src="../../assets/Images/downloadimg.png" ></button>
+ 
+  <div class="page" id="pdf">
+      <h1 class="f">INVOICE</h1>
+      <img src="data:image/png;base64,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" ALIGN="right" class="invImgHead">
+      
+      <!-- <div class="address">
+          <div style="display:flex ; flex-direction:row ;"> <b class="bold">CustomerID</b>  <h4 class="bindingText">Hello</h4> </div>
+          <div style="display:flex ; flex-direction:row ;"> <b class="bold1">CustomerName</b>  <h4 class="bindingText1">Hello</h4> </div>
+          <div style="display:flex ; flex-direction:row ;"> <b class="bold1">SalesDocumentNumber</b>  <h4 class="bindingText1">Hello</h4> </div>
+          <div style="display:flex ; flex-direction:row ;"> <b class="bold1">AccountingDocumentNumber</b>  <h4 class="bindingText1">Hello</h4></div>
+      </div> -->
+      
+      
+      
+      
+
+
+<div id="invoice-bot" class="tableStart">
+
+
+  <div id="table" class="firsttable">
+      <table>
+        <!-- <tr class="tabletitle">
+          <td class="item">
+            <h2>Field</h2>
+          </td>
+          <td class="subtotal">
+            <h2>Value</h2>
+          </td>
+        </tr> -->
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">NAME</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">MOHANRAJ</p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">ADDRESS</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">No.37, gndhi nagar - chennai-600060</p>
+            </td>
+        </tr>
+
+        <!-- <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Customer Name</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">{{custname}}</p>
+            </td>
+        </tr> -->
+
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Document Number</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">{{ItemArray[0].BELNR}}</p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">PO Number</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">{{ItemArray[0].EBELN}}</p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Fiscal Year</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">{{ItemArray[0].GJAHR}}</p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Plant</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">{{ItemArray[0].WERKS}}</p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Currency Type</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">AFN </p>
+            </td>
+        </tr>
+
+        <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Unit</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext1">EA</p>
+            </td>
+        </tr>
+
+
+
+
+      </table>
+    </div>
+
+    <hr class="top">
+
+  <div id="table" class="tableInter">
+    <table>
+      <caption class="tabletitle">Invoice Details</caption>
+      
+      <tr class="service">
+          <td class="tableitem">
+            <p class="itemtext">Serial Number</p>
+          </td>
+          <td class="tableitem">
+              <p class="itemtext">item number</p>
+            </td>
+            <td class="tableitem">
+              <p class="itemtext">Material number</p>
+            </td>
+            <td class="tableitem">
+              <p class="itemtext">Quantity</p>
+            </td>
+            <td class="tableitem">
+              <p class="itemtext">Total stock amount</p>
+            </td>
+            <td class="tableitem">
+              <p class="itemtext">cost</p>
+            </td>
+        </tr>
+
+        <tr *ngFor="let data of ItemArray; let i = index">
+
+          <th scope="row">{{i+1}}</th>
+
+          <td class="item">{{data.EBELP | number}}</td>
+
+          <td>{{data.MATNR | number}}</td>
+
+          <td>{{data.MENGE}}</td>
+
+          <td>{{data.LBKUM}}</td>
+
+          <td>{{data.WRBTR}}</td>
+
+        
+
+
+
+     
+
+    </table>
+  </div>
+  <!--End Table-->
+  <!-- <hr class="top"> -->
+  <div id="table" class="tableInter">
+      <table class="tablethree">
+        <caption class="tabletitle">Amount Details</caption>
+        
+        <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Total Amount</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{Total}}AFN</p>
+              </td>
+          </tr>
+
+          
+
+          <!-- <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Document Current Amount</p>
+            </td>
+            <td class="tableitem"> -->
+                <!-- <p class="itemtext1">{{doccuramount}}</p> -->
+              <!-- </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">General Ledger Amount</p>
+            </td>
+            <td class="tableitem"> -->
+                <!-- <p class="itemtext1">{{generalledgeamount}}</p> -->
+              <!-- </td>
+          </tr>
+         -->
+      </table>
+    </div>
+    <!--End Table-->
+
+
+
+</div>
+
+</div>
+<!--End InvoiceBot-->
+
+</div>
+<!-- End Invoice Holder-->

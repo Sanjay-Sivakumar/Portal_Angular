@@ -1,0 +1,229 @@
+<body>
+
+    <div class='main-container'>
+  
+      <div class='container'>
+  
+        <div class='left-sidebar' >
+  
+          <h2>RFQ</h2>
+  
+          <div>
+  
+            <!-- <ion-icon name="add-circle"></ion-icon> -->
+  
+  
+            <a class='top-left-sidebar-link' href='#'  routerLink="/vpdashboard" routerLinkActive="active"><svg style="color: white;margin-top: 3px; " xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" fill="white"></path> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" fill="white"></path> </svg>
+              <p class="p1"> Dashboard</p></a>
+  
+          </div>
+
+          <div >
+  
+            <!-- <ion-icon name="person-outline"></ion-icon> -->
+  
+            <a  class='left-sidebar-links'  href='#' routerLink="/rfq" routerLinkActive="active" style="margin-left: 25px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16"> <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg>
+              <p>RFQ</p></a>
+  
+          </div>
+  
+          <div  >
+  
+            <!-- <ion-icon name="cash-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#' routerLink="/purchaseorder" routerLinkActive="active">
+              <img src="../../assets/Images/po.png" class="navbarIcon">
+              <p>Purchase Order</p></a>
+          </div>
+  
+  
+         
+  
+          <div >
+  
+            <!-- <ion-icon name="Apps-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'  routerLink="/goodreceipt" routerLinkActive="active">
+              <img src="../../assets/Images/gr.png" class="navbarIcon">
+              <p>Goods Receipt</p> </a>
+  
+          </div>
+  
+          <div>
+  
+            <!-- <ion-icon name="refresh"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'  routerLink="/vpinvoicelist" routerLinkActive="active" >
+              <img src="../../assets/Images/invoice.png" class="navbarIcon">
+              <p style="margin-top: 12px;" >Invoice</p></a>
+  
+          </div>
+  
+          <div>
+  
+            <!-- <ion-icon name="storefront-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'   routerLink="/vpPayment" routerLinkActive="active">
+              <img src="../../assets/Images/payment.png" class="navbarIcon">
+              <p style="margin-top: 13px;">Payment</p></a>
+  
+          </div>
+  
+          <div >
+  
+            <!-- <ion-icon name="storefront-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'routerLink="/vpcredit" routerLinkActive="active" >
+              <img src="../../assets/Images/credit.png" class="navbarIcon1">
+              <p style="margin-top: 12px;" >Credit/DEBIT</p></a>
+  
+          </div>
+  
+         
+  
+          
+          
+  
+          
+          
+  
+        </div>
+  
+        <div class='dashboard'>
+  
+          <div class='top-bar'>
+  
+            <br>
+  
+            <!-- <input placeholder="SEARCH" type='search'> -->
+  
+            <!-- <ion-icon class='search-icon' name="search-outline"></ion-icon> -->
+            <div class="topProfile">
+              <a href="#" class="user" routerLink="/vpprofile" routerLinkActive="active">
+                <img src="../../assets/Images/newProfile.png">
+              </a>
+  
+              <a href="#" routerLink="/vplogin" routerLinkActive="active"> <img src="../../assets/Images/logout.png"></a>
+  
+            </div>
+  
+  
+          </div>
+          <div style="display:flex ; flex-direction:row ;" class="topbbar">
+            <h2>Hi, {{name}}</h2>
+            <div class="searchBar" style="display:flex ; flex-direction:row ;" >
+              <div class="searchicon">
+              <svg  style="color: rgb(25, 226, 240);" xmlns="http://www.w3.org/2000/svg" width="22" height="25"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  fill="#19e2f0"></path>
+              </svg>
+            </div>
+              <input class="form-control searchiconbar" type="text" [(ngModel)]="searchtext" placeholder="search"> </div>
+          </div>
+  
+  
+          <br>
+          <mat-tab-group class="main anim" style="--delay: 0.1s" mat-align-tabs="center">
+
+            <mat-tab label="Header Data">
+              <div class="table-responsive">
+                <table id="myTable" class="display table" style="width:100%">
+              <thead class="thead1">
+                <tr>
+                  <th scope="col" (click)="sort('CUSTOMER ')">Customer Number&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+               
+                  <th scope="col" (click)="sort('EBELP')">Vendor&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                  <th scope="col" (click)="sort('VGABE')">Exchange rate&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                  <th scope="col" (click)="sort('BEWTP')">Created On&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                 
+                  <th scope="col" (click)="sort('BELNR')">Procedure &nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                  <th scope="col" (click)="sort('CPUDT')">Purchase group&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+               
+                               <th scope="col" (click)="sort('BWART')"> discount days&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                 
+                 </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of deliverydet | filter:searchtext | orderBy : key : reverse | paginate:{itemsPerPage:4,currentPage:p};"  class="table-success">
+        
+          
+        
+                
+                  <td>{{item.CUSTOMER | number}}</td>
+                  <td>{{item.VENDOR | number}}</td>
+                  <td>{{item.EXCH_RATE}}</td>
+                  <td>{{item.CREATED_ON}}</td>
+                  <td>{{item.PROCEDURE}}</td>
+                  <td>{{item.PUR_GROUP}}</td>
+                  <td>{{item.DSCNT1_TO}}</td>  
+                </tr>
+              </tbody>
+            </table>
+            </div>
+        </mat-tab>
+        
+        
+        <mat-tab label="Item Data">
+        
+          <div class="table-responsive">
+            <table id="myTable" class="display table" style="width:100%">
+              <thead>
+                <tr>
+                    <th scope="col" (click)="sort('CUSTOMER ')">Purchase Doc Number &nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                 
+                    <th scope="col" (click)="sort('EBELP')">Material&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                    <th scope="col" (click)="sort('VGABE')">Gross value&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                    <th scope="col" (click)="sort('BEWTP')">Material Type&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                   
+                    <th scope="col" (click)="sort('BELNR')">Material Group &nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                    <th scope="col" (click)="sort('CPUDT')">Company Code&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                 
+                    <th scope="col" (click)="sort('CPUTM')">Weight Unit&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                    <th scope="col" (click)="sort('BWART')">Target Quantity&nbsp;<svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371h-1.781zm1.57-.785L11 2.687h-.047l-.652 2.157h1.351z" fill="white"></path> <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645V14zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293V2.5z" fill="white"></path> </svg></th>
+                   
+                   </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of itemdet | filter:searchtext | orderBy : key : reverse | paginate:{itemsPerPage:4,currentPage:p};"  class="table-success">
+          
+            
+          
+                  
+                    <td>{{item.PO_NUMBER}}</td>
+                    <td>{{item.MATERIAL | number }}</td>
+                    <td>{{item.GROS_VALUE}}</td>
+                    <td>{{item.MAT_TYPE}}</td>
+                    <td>{{item.MAT_GRP}}</td>
+                    <td>{{item.CO_CODE}}</td>
+                    <td>{{item.WEIGHTUNIT}}</td>  
+                    <td>{{item.TARGET_QTY}}</td>  
+                  </tr>
+                
+                </tbody>
+            </table>
+            </div>
+        
+        </mat-tab>
+            </mat-tab-group>
+          
+  
+                
+              
+  
+      
+            <div class="pagination-controls">
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+  
+        
+  
+  
+        </div>
+  
+      </div>
+    </div>
+  </body>
+  

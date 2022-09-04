@@ -1,0 +1,59 @@
+<!--ICON-->
+<link rel="shortcut icon" href="/DevanagariBrahmi/logo.png">
+
+
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+  href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400&family=Ubuntu:wght@700&display=swap"
+  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+<button routerLink="/vpdashboard" routerLinkActive="active" id="bt" class="btn btn-2" >
+  Back To Dashboard
+</button>
+
+<div class="container">
+  <table>
+    <tr>
+      <td>
+        <section>
+          <img src="https://i.ibb.co/yNGW4gg/avatar.png" id="blah" alt="Avatar">
+        </section>
+        <h1>{{san}}</h1>
+      </td>
+      <td>
+        <mat-icon class="profileLogout" routerLink="/vlogin" routerLinkActive="active">logout</mat-icon>
+        <ul>
+          <li style="display: flex;"><b class="bold">Full name</b>
+            <h4 class="bindingText">{{name}}</h4>
+          </li>
+          <li style="display: flex;"><b class="bold">Vendor ID</b>
+            <h4 class="bindingText">{{ID}}</h4>
+          </li>
+          <li style="display: flex;"><b class="bold">Contact number</b>
+            <h4 class="bindingText">{{phone}}</h4>
+          </li>
+          <li style="display: flex; flex-direction: column;"><b style="margin-left: 45%;" class="bold">Address</b>
+            <div style="display:flex ; flex-direction:row ;justify-content: space-around;"> <b class="bold">country</b> <b class="bold">State</b> <b
+                class="bold">District</b> </div>
+                <div style="display:flex ; flex-direction:row ;justify-content: space-around;"> <h4 class="bindingText1" >{{country}}</h4> <h4 class="bindingText1">{{state}}</h4> <h4 class="bindingText1">{{district}}</h4> </div>
+            <div style="display:flex ; flex-direction:row ;justify-content: space-around;">  <b class="bold">city</b> <b class="bold">Street</b> <b class="bold">Postal
+                Code</b> </div>
+                <div style="display:flex ; flex-direction:row ;justify-content: space-around;"> <h4 class="bindingText1" >{{city}}</h4> <h4 class="bindingText1" >{{street}}</h4> <h4 class="bindingText1" >{{Postal}}</h4> </div>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>

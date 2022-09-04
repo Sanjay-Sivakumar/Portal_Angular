@@ -1,0 +1,144 @@
+
+<div id="invoiceholder" class="bgpdf">
+  <button class="button loginback" routerLink="/payaging" routerLinkActive="active"> <img src="../../assets/Images/backbtn.png" class="backicon"> </button>
+  <button class="button1 loginback" (click)="openPDF()"><img src="../../assets/Images/downloadimg.png" ></button>
+ 
+    <div class="page" id="pdf">
+        <h1 class="f">Payment</h1>
+        <img src="../../assets/Images/Kaarlogo.bmp" ALIGN="right" class="invImgHead">
+        
+        <!-- <div class="address">
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold">CustomerID</b>  <h4 class="bindingText">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">CustomerName</b>  <h4 class="bindingText1">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">SalesDocumentNumber</b>  <h4 class="bindingText1">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">AccountingDocumentNumber</b>  <h4 class="bindingText1">Hello</h4></div>
+        </div> -->
+        
+        
+        
+        <table id="myTable" class="display table" style="width:100%">
+  
+            <thead>
+                <tr>
+                    <th scope="col"  style="width: 100px;">Sales Doc</th>
+                    <th scope="col" >Account Doc</th>
+                    <th scope="col" >Credit</th>
+                    <th scope="col" >Type</th>
+                    <th scope="col" >Amount</th>
+                    <th scope="col">Due Date</th>
+                  </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of payDet" class="">
+                       
+                    <td>{{item.VBEL2}}</td>
+                    <td>{{item.BELNR}}</td>
+                    <td>{{cord(item.SHKZG)}}</td>
+                    <td>{{item.PSWSL}}</td>
+                    
+                    <td style="align-content: center;">{{item.WRBTR}}</td>
+                    
+                    <td>{{item.MADAT}}</td>
+                   
+                   
+                  </tr>
+            </tbody>
+
+        </table>
+
+
+  <div id="invoice-bot" class="tableStart">
+
+    <div id="table" class="tableInter">
+      <table>
+        <caption class="tabletitle">Payment Details</caption>
+        
+        <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Net Quantity</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{netQuantity}}</p>
+              </td>
+          </tr>
+
+          
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Total Net Amount</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{netAmount}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Amount Paid</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{paidAmount}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Balance Amount</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{balanceAmount}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Due Exceeding Date</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{agingData}}</p>
+              </td>
+          </tr>
+
+
+          <!-- <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Curreny Type</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">communication</p>
+              </td>
+          </tr>
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">BaseLine Date</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">communication</p>
+              </td>
+          </tr>
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Last Dunned Date</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">communication</p>
+              </td>
+          </tr> -->
+
+
+
+       
+
+      </table>
+    </div>
+    <!--End Table-->
+   
+
+
+
+</div>
+
+  </div>
+  <!--End InvoiceBot-->
+
+</div><!-- End Invoice Holder-->

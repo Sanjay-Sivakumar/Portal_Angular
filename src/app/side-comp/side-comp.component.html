@@ -1,0 +1,153 @@
+<!--ICON-->
+<link rel="shortcut icon" href="/DevanagariBrahmi/logo.png">
+
+
+
+<!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+  href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Oswald:wght@300;400&family=Ubuntu:wght@700&display=swap"
+  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+
+<div class="loading-container" *ngIf="show">
+  <p class="spinner-text">
+    loading...
+</p>
+<div class="spinner"></div>
+</div>
+
+<body *ngIf="hide">
+
+    <div class='main-container'>
+  
+      <div class='container'>
+  
+        <div class='left-sidebar' >
+  
+          <h2>Dashboard</h2>
+  
+          <div>
+  
+            <!-- <ion-icon name="add-circle"></ion-icon> -->
+  
+  
+            <a class='top-left-sidebar-link' href='#'  routerLink="/edashboard" routerLinkActive="active"><svg style="color: white;margin-top: 3px; " xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" fill="white"></path> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" fill="white"></path> </svg>
+              <p class="p1"> Dashboard</p></a>
+  
+          </div>
+  
+          
+  
+          <div >
+  
+            <!-- <ion-icon name="Apps-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'  routerLink="/epleavedet" routerLinkActive="active">
+              <img src="../../assets/Images/leavedet.png" class="navbarIcon">
+              <p>Leave Details</p> </a>
+  
+          </div>
+  
+  
+  
+          <div>
+  
+            <!-- <ion-icon name="storefront-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'   routerLink="/epaypdf" routerLinkActive="active">
+              <img src="../../assets/Images/payment.png" class="navbarIcon">
+              <p style="margin-top: 13px;">PaySlip</p></a>
+  
+          </div>
+    
+        
+          
+  
+          
+          
+  
+        </div>
+  
+        <div class='dashboard'>
+  
+          <div class='top-bar'>
+  
+            <br>
+  
+            <!-- <input placeholder="SEARCH" type='search'> -->
+  
+            <!-- <ion-icon class='search-icon' name="search-outline"></ion-icon> -->
+            <div class="topProfile">
+              <a href="#" class="user" routerLink="/eprofile" routerLinkActive="active">
+               <!-- <img src="../../assets/Images/newProfile.png"> -->
+              </a>
+  
+              <a (click)="logoutfn()"> <img src="../../assets/Images/logout.png"></a>
+  
+            </div>
+  
+  
+          </div>
+         
+  
+  
+          <br>
+         
+          <div class="container1" >
+           
+          
+            <table>
+              <tr>
+                <td>
+                  <section>
+                    <img src="https://i.ibb.co/yNGW4gg/avatar.png" id="blah" alt="Avatar">
+                  </section>
+                  <h1>{{san}}</h1>
+                </td>
+                <td>
+                  <ul>
+                    <li style="display: flex;"><b class="bold">Full name</b>
+                      <h4 class="bindingText">{{name}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Employee ID</b>
+                      <h4 class="bindingText">{{id}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Contact number</b>
+                      <h4 class="bindingText">{{contact}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Address</b>
+                      <h4 class="bindingText">{{address}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Pincode</b>
+                      <h4 class="bindingText">{{pincode}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Practice</b>
+                      <h4 class="bindingText">{{Practice}}</h4>
+                    </li>
+                    <li style="display: flex;"><b class="bold">Designation</b>
+                      <h4 class="bindingText">{{designation}}</h4>
+                    </li>
+                   
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+  
+        </div>
+  
+      </div>
+    </div>
+  </body>
+  

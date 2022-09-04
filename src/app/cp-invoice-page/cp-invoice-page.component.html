@@ -1,0 +1,197 @@
+
+<div class="bgpdf">
+<div id="invoiceholder" class="bgpdf">
+  <button class="button loginback" routerLink="/invoicetable" routerLinkActive="active"> <img src="../../assets/Images/backbtn.png" class="backicon"> </button>
+  <button class="button1 loginback" (click)="openPDF()"><img src="../../assets/Images/downloadimg.png" ></button>
+    <div class="page" id="pdf">
+        <h1 class="f">INVOICE</h1>
+        <img src="../../assets/Images/Kaarlogo.bmp" ALIGN="right" class="invImgHead">
+        
+        <!-- <div class="address">
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold">CustomerID</b>  <h4 class="bindingText">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">CustomerName</b>  <h4 class="bindingText1">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">SalesDocumentNumber</b>  <h4 class="bindingText1">Hello</h4> </div>
+            <div style="display:flex ; flex-direction:row ;"> <b class="bold1">AccountingDocumentNumber</b>  <h4 class="bindingText1">Hello</h4></div>
+        </div> -->
+        
+        
+        
+        
+
+
+  <div id="invoice-bot" class="tableStart">
+
+
+    <div id="table">
+        <table>
+          <!-- <tr class="tabletitle">
+            <td class="item">
+              <h2>Field</h2>
+            </td>
+            <td class="subtotal">
+              <h2>Value</h2>
+            </td>
+          </tr> -->
+  
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Customer ID</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{custid}}</p>
+              </td>
+          </tr>
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Customer Name</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{custname}}</p>
+              </td>
+          </tr>
+
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Sales Document Number</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{salesdocnum}}</p>
+              </td>
+          </tr>
+  
+        </table>
+      </div>
+
+      <hr class="top">
+
+    <div id="table" class="tableInter">
+      <table>
+        <caption class="tabletitle">Account Details</caption>
+        
+        <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Accounting Document Number</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{accdocnum}}</p>
+              </td>
+          </tr>
+
+          
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Account Type</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{acctyp}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Fiscal Year</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{fiscalyear}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Credit/Debit</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{cord}}</p>
+              </td>
+          </tr>
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Line Item Count</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{lineitemnum}}</p>
+              </td>
+          </tr>
+
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Curreny Type</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{currencytype}}</p>
+              </td>
+          </tr>
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">BaseLine Date</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{balsedate}}</p>
+              </td>
+          </tr>
+
+          <tr class="service">
+            <td class="tableitem">
+              <p class="itemtext">Last Dunned Date</p>
+            </td>
+            <td class="tableitem">
+                <p class="itemtext1">{{lastduneddate}}</p>
+              </td>
+          </tr>
+
+
+
+       
+
+      </table>
+    </div>
+    <!--End Table-->
+    <hr class="top">
+    <div id="table" class="tableInter">
+        <table>
+          <caption class="tabletitle">Amount Details</caption>
+          
+          <tr class="service">
+              <td class="tableitem">
+                <p class="itemtext">Local Currency Amount</p>
+              </td>
+              <td class="tableitem">
+                  <p class="itemtext1">{{loccuramount}}</p>
+                </td>
+            </tr>
+  
+            
+  
+            <tr class="service">
+              <td class="tableitem">
+                <p class="itemtext">Document Current Amount</p>
+              </td>
+              <td class="tableitem">
+                  <p class="itemtext1">{{doccuramount}}</p>
+                </td>
+            </tr>
+            <tr class="service">
+              <td class="tableitem">
+                <p class="itemtext">General Ledger Amount</p>
+              </td>
+              <td class="tableitem">
+                  <p class="itemtext1">{{generalledgeamount}}</p>
+                </td>
+            </tr>
+          
+        </table>
+      </div>
+      <!--End Table-->
+
+
+
+</div>
+
+  </div>
+  <!--End InvoiceBot-->
+
+</div><!-- End Invoice Holder-->
+</div>

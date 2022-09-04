@@ -1,0 +1,332 @@
+<div class="loading-container" *ngIf="show">
+  <p class="spinner-text">
+    loading...
+</p>
+<div class="spinner"></div>
+</div>
+<body *ngIf="hide">
+
+    <div class='main-container'>
+  
+      <div class='container'>
+  
+        <div class='left-sidebar' >
+  
+          <h2>Dashboard</h2>
+  
+          <div>
+  
+            <!-- <ion-icon name="add-circle"></ion-icon> -->
+  
+  
+            <a class='top-left-sidebar-link' href='#'  routerLink="/vpdashboard" routerLinkActive="active"><svg style="color: white;margin-top: 3px; " xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" fill="white"></path> <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" fill="white"></path> </svg>
+              <p class="p1"> Dashboard</p></a>
+  
+          </div>
+
+          <div >
+  
+            <!-- <ion-icon name="person-outline"></ion-icon> -->
+  
+            <a  class='left-sidebar-links'  href='#' routerLink="/rfq" routerLinkActive="active" style="margin-left: 25px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16"> <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg>
+              <p>RFQ</p></a>
+  
+          </div>
+  
+          <div  >
+  
+            <!-- <ion-icon name="cash-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#' routerLink="/purchaseorder" routerLinkActive="active">
+              <img src="../../assets/Images/po.png" class="navbarIcon">
+              <p>Purchase Order</p></a>
+          </div>
+  
+  
+         
+  
+          <div >
+  
+            <!-- <ion-icon name="Apps-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'  routerLink="/goodreceipt" routerLinkActive="active">
+              <img src="../../assets/Images/gr.png" class="navbarIcon">
+              <p>Goods Receipt</p> </a>
+  
+          </div>
+  
+          <div>
+  
+            <!-- <ion-icon name="refresh"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'  routerLink="/vpinvoicelist" routerLinkActive="active" >
+              <img src="../../assets/Images/invoice.png" class="navbarIcon">
+              <p style="margin-top: 12px;" >Invoice</p></a>
+  
+          </div>
+  
+          <div>
+  
+            <!-- <ion-icon name="storefront-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'   routerLink="/vpPayment" routerLinkActive="active">
+              <img src="../../assets/Images/payment.png" class="navbarIcon">
+              <p style="margin-top: 13px;">Payment</p></a>
+  
+          </div>
+  
+          <div >
+  
+            <!-- <ion-icon name="storefront-outline"></ion-icon> -->
+  
+            <a class='left-sidebar-links' href='#'routerLink="/vpcredit" routerLinkActive="active" >
+              <img src="../../assets/Images/credit.png" class="navbarIcon1">
+              <p style="margin-top: 12px;" >Credit/DEBIT</p></a>
+  
+          </div>
+  
+         
+  
+          
+          
+  
+          
+          
+  
+        </div>
+  
+        <div class='dashboard'>
+  
+          <div class='top-bar'>
+  
+            <br>
+  
+            <!-- <input placeholder="SEARCH" type='search'> -->
+  
+            <!-- <ion-icon class='search-icon' name="search-outline"></ion-icon> -->
+            <div class="topProfile">
+              <a href="#" class="user" routerLink="/vpprofile" routerLinkActive="active">
+                <img src="../../assets/Images/newProfile.png">
+              </a>
+  
+              <a (click)="logoutfn()"> <img src="../../assets/Images/logout.png"></a>
+  
+            </div>
+  
+  
+          </div>
+  
+          <h2>Hi,{{name}}</h2>
+  
+          <br>
+  
+          <div class='box-container'>
+  
+            <div class='box'>
+  
+              <div class='box-row' routerLink="/profile" routerLinkActive="active">
+  
+                <a href="#" style="margin-left: 22px;"> <img src="../../assets/Images/gr.png"></a>
+  
+                <p style="margin-left: -4px; margin-top: 13px;">Goods Receipt</p>
+  
+              </div>
+              <br>
+  
+              <div class='line'></div>
+  
+              <br>
+  
+  
+  
+              <div class='buttons-container'>
+  
+                <p>Number Of Data Available</p>
+  
+  
+                <a  style="margin-left:-1px;" class='buttons' href='#'>{{grno}}</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class='box'>
+  
+              <div class='box-row'>
+                <a href="#" style="margin-left: 22px;">   
+                  <img src="../../assets/Images/payment.png"> 
+                               </a>
+  
+                <p style="margin-left: -2px;  margin-top: 13px;">Payment</p>
+  
+              </div>
+  
+              
+              <br>
+  
+              <div class='line'></div>
+              <br>
+             
+  
+             
+  
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+             
+                <a class='buttons' href='#'>{{payno}}</a>
+  
+              </div>
+  
+            </div>
+            <div class='box'>
+  
+              <div class='box-row'>
+                <a href="#" style="margin-left: 22px;">  <img src="../../assets/Images/credit.png">                </a>
+  
+                <p style="margin-left: -2px;  margin-top: 13px;">Credit</p>
+  
+              </div>
+              <br>
+  
+              <div class='line'></div>
+  
+              <br>
+  
+             
+  
+              
+  
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+               
+                <a class='buttons' href='#'>{{creditno}}</a>
+  
+              </div>
+  
+            </div>
+            <div class='box'>
+  
+              <div class='box-row'>
+  
+                <a href="#" style="margin-left: 22px;">  <img src="../../assets/Images/debit.png">
+                                </a>
+                <p style="margin-left: -2px;  margin-top: 13px;">Debit</p>
+  
+              </div>
+              <br>
+  
+              <div class='line'></div>
+  
+              <br>
+  
+              
+  
+              
+  
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+  
+                <a class='buttons' href='#'>{{debitno}}</a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <br>
+  
+  
+          <div class='box-container'>
+  
+            <div class='box' style="margin-left:75px;">
+  
+              <div class='box-row'>
+  
+                <a href="#" style="margin-left: 32px;"> <img src="../../assets/Images/invoice.png">                </a>
+                <p style="margin-left: -2px;  margin-top: 13px;">Invoice</p>
+  
+              </div>
+              <br>
+  
+              <div class='line'></div>
+  
+              <br>
+  
+             
+  
+              
+  
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+                <a class='buttons' href='#'>{{invno}}</a>
+  
+              </div>
+  
+            </div>
+  
+            <div class='box'>
+  
+              <div class='box-row'>
+  
+                <a href="#" style="margin-left: 22px;"> <img src="../../assets/Images/po.png">
+                               </a>
+  
+                <p style="margin-left: -2px; margin-top: 13px;">Purchase Order</p>
+  
+              </div>
+              <br>
+  
+              <div class='line'></div>
+  
+              <br>
+  
+             
+  
+  
+          
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+                <a class='buttons' href='#'>{{pono}}</a>
+  
+              </div>
+  
+            </div>
+            <div class='box'>
+  
+              <div class='box-row'>
+  
+                <a href="#" style="margin-left: 12px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16"> <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z"/> <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/> <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/> </svg>
+                </a>
+  
+                <p style="margin-left: -2px; margin-bottom: 27px;">RFQ</p>
+  
+              </div>
+  
+              <br>
+              <div class='line'></div>
+  
+              <br>
+              
+  
+            
+  
+             
+  
+              <div class='buttons-container'>
+                <p>Number Of Data Available</p>
+                <a class='buttons' href='#'>{{rfqno}}</a>
+              </div>
+  
+            </div>
+            
+  
+          </div>
+  
+  
+        </div>
+  
+      </div>
+    </div>
+  
